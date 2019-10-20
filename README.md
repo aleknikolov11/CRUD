@@ -53,14 +53,17 @@ IMPORTANT! Not following the manual can result in an unpredictable behaviour!
 		php index.php -read <=> SELECT * FROM <table_name>;
 
 	2.2) -create
+	
 		php index.php -create id=1 name="My name" <=> INSERT INTO <table_name> (id, name) VALUES (1, "My name");
 
 	2.3) -update
+	
 		php index.php -update name="My New Name" type="My New Type" -match id=1
 						<=>
 		UPDATE <table_name> SET name="My New Name", type="My New Type" WHERE id=1;
 
 	2.4) -delete
+	
 		php index.php -delete -match id=2 <=> DELETE FROM <table_name> WHERE id=2;
 
 	2.5)-search - same as -read, but returns the number of results
